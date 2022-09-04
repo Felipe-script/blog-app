@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { NavBar } from "./components";
+import { Home, Login, CreatePost } from "@/pages";
+import { PrivateRoute } from "./routes";
+// import logo from './logo.svg'
+// import "./App.css";
+
+const App: React.FC = (): React.ReactElement => {
+	return (
+		<div>
+			<NavBar />
+			<Routes>
+				{/* public routes */}
+				<Route path="/" element={<Home />} />
+				<Route path="/login" element={<Login />} />
+
+				{/* private routes */}
+				<Route path="/create-post" element={<PrivateRoute component={CreatePost} />} />
+			</Routes>
+		</div>
+	);
+};
 
 export default App;

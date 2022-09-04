@@ -1,3 +1,16 @@
+@import-normalize; /* bring in normalize.css styles */
+
+/* rest of app styles */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +18,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+	/* min-width: 400px; */
+	/* max-width: 1600px; */
 }
 
 code {
