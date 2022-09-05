@@ -6,4 +6,6 @@ export enum PRIVATE_PATHS {
   MY_ACCOUNT = '/my-account',
 	MY_BOOKMARKS = '/my-bookmarks',
   DRAFTS = '/drafts',
+	POST = '/posts/:id',
+	POSTS = '/posts',
 };
