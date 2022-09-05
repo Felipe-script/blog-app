@@ -1,8 +1,8 @@
 export const breakpoints = {
-  sm: 41.1,
-  md: 76.8,
-  lg: 136.6,
-  xl: 192
+  sm: 411,
+  md: 768,
+  lg: 1366,
+  xl: 1920
 };
 
 export enum BREAKPOINTS {
@@ -18,5 +18,5 @@ export enum BREAKPOINTS {
 */
 export const mediaQueries = (key: keyof typeof breakpoints) => {
   return (style: TemplateStringsArray | String) =>
-    `@media (min-width: ${breakpoints[key]}rem) { ${style} }`;
+    `@media (min-width: ${breakpoints[key]}px) { ${style} }`;
 };

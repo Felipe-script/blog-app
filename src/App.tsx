@@ -1,11 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { NavBar } from "./components";
-import { Home, Login, CreatePost } from "@/pages";
+import { NavBar } from "@/components";
+import { Home, MyAccount, Mybookmarks, Drafts } from "@/pages";
 import { PrivateRoute } from "./routes";
-// import logo from './logo.svg'
-// import "./App.css";
+import { PUBLIC_PATHS, PRIVATE_PATHS } from '@/enums/routes';
 
 const App: React.FC = (): React.ReactElement => {
 	return (
@@ -13,11 +12,12 @@ const App: React.FC = (): React.ReactElement => {
 			<NavBar />
 			<Routes>
 				{/* public routes */}
-				<Route path="/" element={<Home />} />
-				<Route path="/login" element={<Login />} />
+				<Route path={PUBLIC_PATHS.HOME} element={<Home />} />
 
 				{/* private routes */}
-				<Route path="/create-post" element={<PrivateRoute component={CreatePost} />} />
+				<Route path={PRIVATE_PATHS.MY_ACCOUNT} element={<PrivateRoute component={MyAccount} />} />
+				<Route path={PRIVATE_PATHS.MY_BOOKMARKS} element={<PrivateRoute component={Mybookmarks} />} />
+				<Route path={PRIVATE_PATHS.DRAFTS} element={<PrivateRoute component={Drafts} />} />
 			</Routes>
 		</div>
 	);

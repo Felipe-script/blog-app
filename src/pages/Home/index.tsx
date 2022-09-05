@@ -11,11 +11,11 @@ const Home: React.FC = (): React.ReactElement => {
 				<S.PrimaryArticle>
 					<S.PrimaryArticleContent>
 						<S.TitlePrimaryArticle>
-							In Search of the Long Covid Cure
+							Showcase your thought provoking topics and ideas
 						</S.TitlePrimaryArticle>
 						<S.DescriptionPrimary>
-							Big company announcement or simple sub - header taking two or more
-							lines.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+							quis risus ac mi pulvinar semper id viverra sem.
 						</S.DescriptionPrimary>
 						<Button label="Read more" />
 					</S.PrimaryArticleContent>
@@ -33,7 +33,29 @@ const Home: React.FC = (): React.ReactElement => {
 					<S.Article>
 						<S.ArticleImage src={imageArticle} />
 						<S.ColumnArticle>
-							<S.ArticleTitle>test title</S.ArticleTitle>
+							<S.ArticleTitle>Big company announcement</S.ArticleTitle>
+							<S.DescriptionArticle>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+								quis risus ac mi pulvinar semper id viverra sem.
+							</S.DescriptionArticle>
+							<Button label="Read more" />
+						</S.ColumnArticle>
+					</S.Article>
+					<S.Article>
+						<S.ArticleImage src={imageArticle} />
+						<S.ColumnArticle>
+							<S.ArticleTitle>Big company announcement</S.ArticleTitle>
+							<S.DescriptionArticle>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+								quis risus ac mi pulvinar semper id viverra sem.
+							</S.DescriptionArticle>
+							<Button label="Read more" />
+						</S.ColumnArticle>
+					</S.Article>
+					<S.Article>
+						<S.ArticleImage src={imageArticle} />
+						<S.ColumnArticle>
+							<S.ArticleTitle>Big company announcement</S.ArticleTitle>
 							<S.DescriptionArticle>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
 								quis risus ac mi pulvinar semper id viverra sem.
